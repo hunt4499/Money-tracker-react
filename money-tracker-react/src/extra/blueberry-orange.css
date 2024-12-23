@@ -1,0 +1,144 @@
+:root {
+  /* Modern primary colors */
+  --primary-color: #2563eb;   
+  --secondary-color: #f9fafb; 
+  --color-title: #1e293b;      
+  --color-subtitle: rgba(30, 41, 59, 0.8); 
+  
+  /* Status and feedback colors */
+  --color-success: #10b981;    
+  --color-danger: #ef4444;  
+  --color-info: #3b82f6;     
+  --color-warn: #f59e0b
+  
+  /* Link colors */
+  --link-color: #6366f1;
+  --link-color-hover: #4f46e5; 
+  
+  /* Additional theme colors */
+  --color-1: #334155;  
+  --color-2: #0ea5e9;     
+  --color-3: #dc2626;
+  --color-4: #1d4ed8;      
+  --color-5: #059669;    
+}
+
+.color-title {
+  color: var(--color-title);
+}
+
+.color-subtitle {
+  color: var(--color-subtitle);
+}
+
+.color-link {
+  color: var(--link-color-hover);
+}
+
+.text-error {
+  color: var(--color-3);
+}
+
+body a {
+  color: var(--link-color);
+}
+
+body a:hover {
+  color: var(--link-color-hover);
+}
+
+/*Input*/
+body .p-inputtext {
+  font-size: 14px;
+  color: #333333;
+  background: #ffffff;
+  padding: 0.429em;
+  border: 1px solid #e5e7eb;
+  -o-transition: border-color 0.2s;
+  -webkit-transition: border-color 0.2s;
+  transition: border-color 0.2s;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border-radius: 6px;
+}
+
+body .p-inputtext:enabled:hover:not(.p-error) {
+  border-color: var(--primary-color);
+}
+
+body .p-inputtext:enabled:focus:not(.p-error) {
+  border-color: var(--primary-color);
+  outline: 0 none;
+  -webkit-box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.2);
+  box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.2);
+}
+
+/*Primary button*/
+body .p-button {
+  border-radius: 6px;
+  background-color: var(--primary-color);
+  font-weight: 500;
+  border: 1px solid var(--primary-color);
+}
+
+body .p-button:enabled:hover, body .p-button:enabled:active {
+  background-color: #1d4ed8;
+  border-color: #1d4ed8;
+}
+
+/*Secondary button*/
+body .p-button.p-button-secondary {
+  background-color: var(--secondary-color);
+  border: 1px solid #e5e7eb;
+  color: var(--color-title);
+}
+
+body .p-button.p-button-secondary:enabled:hover, body .p-button.p-button-secondary:enabled:active {
+  background-color: #f3f4f6;
+  border-color: #d1d5db;
+}
+
+/* Calendar event styling */
+.fc-event {
+  border-radius: 6px;
+  border: 1px solid var(--primary-color);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  background-color: var(--primary-color);
+}
+
+/* Table styling */
+body .p-datatable .p-datatable-thead > tr > th {
+  color: var(--color-title);
+  border: none;
+  background: transparent;
+  border-bottom: 2px solid var(--color-subtitle);
+  font-weight: 600;
+}
+
+/* Message styling */
+body .p-messages.p-messages-success {
+  background-color: var(--color-success);
+  color: #ffffff;
+  border-radius: 6px;
+}
+
+body .p-messages.p-messages-error {
+  background-color: var(--color-danger);
+  color: #ffffff;
+  border-radius: 6px;
+}
+
+body .p-messages.p-messages-info {
+  background-color: var(--color-info);
+  color: #ffffff;
+  border-radius: 6px;
+}
+
+body .p-messages.p-messages-warn {
+  background-color: var(--color-warn);
+  color: #ffffff;
+  border-radius: 6px;
+}
+
+/* The rest of the original CSS remains unchanged */
